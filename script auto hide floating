@@ -1,0 +1,17 @@
+<script type="text/javascript">
+function hide(elementId) {
+    document.getElementById(elementId).style.display = 'none';
+}
+window.onload = function() {
+    setTimeout("hide('cakfadil')", 3000);
+}
+var timer1 = setTimeout("hide('cakfadil')", 3000);
+clearTimeout(timer1);
+var timer1 = setInterval("updateClock()", 1000);
+clearInterval(timer1);
+</script>
+<div id="cakfadil">
+<span>Scroll Kebawah untuk Menuju Link Download</span></div>
+<style>
+#cakfadil {position:fixed;top:200px;text-align:center;width:92%;max-width:970px;color: white;background:black;padding:10px;border-radius:8px;}
+</style>
